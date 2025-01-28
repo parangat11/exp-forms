@@ -1,0 +1,16 @@
+<html></html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <%- include('partials/errors.ejs') %>
+        <form action="/<%= user.id %>/update" method="POST">
+            <label for="firstName">First Name*:</label>
+            <input type="text" name="firstName"  value="<%=user.firstName%>" id="firstName" required>
+            <label for="lastName">Last Name*:</label>
+            <input type="text" name="lastName"  value="<%=user.lastName%>" id="lastName" required>
+            <button type="submit">Submit</button>
+        </form>
+        <a href="/">Go to Home Page</a>
+    </body>
+</html>
