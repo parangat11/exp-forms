@@ -42,7 +42,7 @@ exports.usersCreatePost = [
   }
 ]
 
-exports.userUpdateGet = (req, res) => {
+exports.usersUpdateGet = (req, res) => {
   const user = usersStorage.getUser(req.params.id)
   res.render('updateUser', {
     title: 'Update User',

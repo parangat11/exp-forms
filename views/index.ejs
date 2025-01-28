@@ -9,7 +9,7 @@
                 <% users.forEach( user => { %>
                     <li>
                         ID: <%= user.id %>, Name: <%=user.firstName%> <%=user.lastName%>
-                        <a href="/<%=user.id%>/update"></a>
+                        <a href="/<%=user.id%>/update">Update <%=user.id%></a>
                     </li>
                 <% }) %>
             <% } %>
