@@ -67,3 +67,9 @@ exports.userUpdatePost = [
     res.redirect('/')
   }
 ]
+
+exports.userDeletePost = (req, res) => {
+  const userId = req.params.id
+  usersStorage.deleteUser(userId)
+  res.redirect('/')
+}
